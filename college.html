@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculus A/B</title>
+<link href="college.css" rel="stylesheet" type="text/css">
+<link href="modal_boxes.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Chewy|Coiny|Fredoka+One|Nunito|Righteous" rel="stylesheet">
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+
+<body>
+
+<div id="backcolor">
+<!-- Main Section -->
+<div class="main-bar">
+
+	<!-- Subheader scroll bar -->
+	<div id="account-bar">
+		<div id="background-bar"></div>
+
+		<!-- Logo -->
+		<a href="index.html" id="logo">MT</a>
+			<div id="logo-symbols-container">
+				<div class="logo-symbol" id="plus">+</div>
+				<div class="logo-symbol" id="divide">/</div>
+				<div class="logo-symbol" id="subraction">-</div>
+				<div class="logo-symbol" id="multiply">*</div>
+			</div>
+
+		<div id="login">Login</div>
+		<div id="register">Register</div>
+	</div>
+
+	<!-- Subheader title section -->
+	<div id="title-bar">
+		<div id="main-title">CS61a</div>
+			<div id="symbols-container">
+				<div class="symbol" id="plus">O(n)</div>
+				<div class="symbol" id="divide">λ</div>
+				<div class="symbol" id="subraction">()</div>
+				<div class="symbol" id="multiply">def</div>
+			</div>
+	</div>
+</div>
+
+<div id="label-bar">
+	<div class="label" id="equations">Practice</div>
+	<div class="label" id="calculations">Code</div>
+	<div class="label" id="tutorials">Tutorials</div>
+	<div class="label" id="sections">Sections</div>
+</div>
+
+<!-- Modal Login Box -->
+	<div id="modal-container">
+		<div id="modal-overlay"></div>
+			<div id="modal-box">
+				<div id="modal-header">Login</div>
+				<div id="modal-content">
+					<input type = "text" class = "cred" placeholder = "Enter Username" />
+					<input type = "password" class = "cred" placeholder = "Enter Password" />
+				</div>
+				<div id="modal-footer">
+					<div id="submit">Submit</div>
+					<div id="cancel">Cancel</div>
+				</div>
+			</div>
+	</div>
+
+<!-- Modal Login Box -->
+	<div class="modal-container-contact" id="modal-contact">
+		<div id="modal-overlay-contact"></div>
+			<div id="modal-box">
+				<div id="modal-header">Practice Finals</div>
+				<div id="modal-content-contact">
+					<div id="contact-button-bar">
+						<div class="contact-button">Fall 2012</div>
+						<div class="contact-button">Fall 2013</div>
+						<div class="contact-button">Fall 2014</div>
+						<div class="contact-button">Fall 2015</div>
+						<div class="contact-button">Spring 2013</div>
+						<div class="contact-button">Spring 2014</div>
+						<div class="contact-button">Spring 2015</div>
+						<div class="contact-button">Spring 2016</div>
+					</div>
+				</div>
+				<div id="modal-footer-content">
+					<div id="submit-contact">Ok</div>
+				</div>
+			</div>
+	</div>
+
+<div id="content-section">
+	<div class="content-item" id="equations-slider">
+		<div class="grid">
+			<div class="grid-item--small">
+				<div class="large-font">Released Practice Finals</div>
+			</div>
+			<div class="grid-item--small">
+				<div class="large-font">Discussions</div>
+			</div>
+			<div class="grid-item--small">
+				<div class="large-font">Labs</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-item" id="calculations-slider">
+			<div class="grid-item--large">
+				<div class="large-font">Interactive Interpreters</div>
+				<div class="button">Python</div>
+				<div class="button">Scheme</div>
+				<div class="button">SQL</div>
+			</div>
+	</div>
+	<div class="content-item" id="tutorials-slider">
+			<div class="grid-item--small">
+				<div class="large-font">Tutors Websites</div>
+			</div>
+			<div class="grid-item--small">
+				<div class="large-font">Videos and Walkthroughs</div>
+			</div>
+	</div>
+	<div class="content-item" id="sections-slider">
+		<div class="grid-item--small">
+				<div class="large-font">Find Sections of Book online</div>
+			</div>
+			<div class="grid-item--small">
+				<div class="large-font">Community Sections</div>
+			</div>
+			<div class="grid-item--large">
+				<div class="large-font">Current Installed Sections</div>
+				<div class="button">Section 1.3</div>
+				<div class="button">Section 3.2</div>
+				<div class="button">Section 4.1</div>
+			</div>
+	</div>
+</div>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="college.js"></script>
+
+</html>

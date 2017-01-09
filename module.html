@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculus A/B</title>
+<link href="module.css" rel="stylesheet" type="text/css">
+<link href="modal_boxes.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Chewy|Coiny|Fredoka+One|Nunito|Righteous" rel="stylesheet">
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+
+<body>
+
+<!-- Main Section -->
+<div class="main-bar">
+
+	<!-- Subheader scroll bar -->
+	<div id="account-bar">
+		<div id="background-bar"></div>
+
+		<!-- Logo -->
+		<a href="index.html" id="logo">MT</a>
+			<div id="logo-symbols-container">
+				<div class="logo-symbol" id="plus">+</div>
+				<div class="logo-symbol" id="divide">/</div>
+				<div class="logo-symbol" id="subraction">-</div>
+				<div class="logo-symbol" id="multiply">*</div>
+			</div>
+
+		<div id="login">Login</div>
+		<div id="register">Register</div>
+	</div>
+
+	<!-- Subheader title section -->
+	<div id="title-bar">
+		<div id="main-title">Calc AB</div>
+			<div id="symbols-container">
+				<div class="symbol" id="plus">∫</div>
+				<div class="symbol" id="divide">dy</div>
+				<div class="symbol" id="subraction">f'</div>
+				<div class="symbol" id="multiply">dx</div>
+			</div>
+	</div>
+</div>
+
+<div id="label-bar">
+	<div class="label" id="equations">Equations</div>
+	<div class="label" id="calculations">Calculations</div>
+	<div class="label" id="tutorials">Tutorials</div>
+	<div class="label" id="sections">Sections</div>
+</div>
+
+<!-- Modal Login Box -->
+	<div id="modal-container">
+		<div id="modal-overlay"></div>
+			<div id="modal-box">
+				<div id="modal-header">Login</div>
+				<div id="modal-content">
+					<input type = "text" class = "cred" placeholder = "Enter Username" />
+					<input type = "password" class = "cred" placeholder = "Enter Password" />
+				</div>
+				<div id="modal-footer">
+					<div id="submit">Submit</div>
+					<div id="cancel">Cancel</div>
+				</div>
+			</div>
+	</div>
+
+<div id="content-section">
+	<div class="content-item" id="equations-slider">
+		<div class="grid">
+			<div class="grid-item--small">
+				<div class="large-font">New Equation</div>
+				<div class="small-font">Current Equation: 2x ^ 2 + 3x + 8</div>
+				<div class="small-font">Last Equation: 4x ^ 4 + 3x</div>
+			</div>
+			<div class="grid-item--large">
+				<div class="large-font">Graph Equation</div>
+				<div class="small-font">Current Equation: 2x ^ 2 + 3x </div>
+				<img src="resources/example-graph.gif">
+			</div>
+			<div class="grid-item--small">
+				<div class="large-font">My Equations</div>
+				<div class="small-font">Current Equation Name: Example Other: Quadratic, Linear</div>
+			</div>
+			<div class="grid-item--small">
+				<div class="large-font">Practice Equations</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-item" id="calculations-slider">
+		<div class="grid-item--small">
+				<div class="large-font">Derive</div>
+				<div class="small-font">Current Equation: 2x ^ 2 + 3x + 8</div>
+				<div class="small-font">Last Equation: 4x ^ 4 + 3x</div>
+			</div>
+			<div class="grid-item--large">
+				<div class="large-font">Step by Step</div>
+				<div class="button">Derive</div>
+				<div class="button">Integrate</div>
+				<div class="button">Graph</div>
+				<div class="button">Series</div>
+			</div>
+			<div class="grid-item--small">
+				<div class="large-font">Integrate</div>
+				<div class="small-font">Current Equation: 2x ^ 2 + 3x + 8</div>
+				<div class="small-font">Last Equation: 4x ^ 4 + 3x</div>
+			</div>
+			<div class="grid-item--small">
+				<div class="large-font">Series of Equation</div>
+			</div>
+	</div>
+	<div class="content-item" id="tutorials-slider">
+		<div class="grid-item--large">
+				<div class="large-font">Open Last Tutorial</div>
+				<div class="small-font">Author: Jonny Doe</div>
+				<div class="small-font">Topic: Power Rule</div>
+				<div class="small-font">Preview: "This tutorial will focus on the basics of the power rule. For this tutorial I recommend following along with the practice problems. If you are a tutor I would recommend doing the practice problems anyway just so..."</div>
+			</div>
+			<div class="grid-item--large">
+				<div class="large-font">Recommended Tutorial</div>
+				<div class="small-font">Author: Jane Doe</div>
+				<div class="small-font">Topic: Infinity</div>
+				<div class="small-font">Preview: "I find it often very difficult to grasp with the topic of infinity. Which is unfortunate because it is often the case that you will run into infinity, both in practice and on the exam. So I've written this tutorial to help..."</div>
+			</div>
+			<div class="grid-item--small">
+				<div class="large-font">Search For Tutorials</div>
+			</div>
+	</div>
+	<div class="content-item" id="sections-slider">
+		<div class="grid-item--small">
+				<div class="large-font">Find Sections of Book online</div>
+			</div>
+			<div class="grid-item--small">
+				<div class="large-font">Community Sections</div>
+			</div>
+			<div class="grid-item--large">
+				<div class="large-font">Current Installed Sections</div>
+				<div class="button">Chapter 1</div>
+				<div class="button">Chapter 3</div>
+				<div class="button">Chapter 4</div>
+			</div>
+			<div class="grid-item--small">
+				<div class="large-font">Practice Problems</div>
+			</div>
+	</div>
+</div>
+
+<!-- Modal Contact Box -->
+<div class="modal-container-contact" id="modal-contact">
+	<div id="modal-overlay-contact"></div>
+		<div id="modal-box">
+			<div id="modal-header">Oops!</div>
+			<div id="modal-content-contact">
+				Hey there! Sorry about that but this content hasn't been implemented yet. Currently MathTutor is in very early beta and the backend heavy features (like the one you just clicked on) have not been implemented yet. 
+			</div>
+		<div id="modal-footer-content">
+			<div id="submit-contact">Ok</div>
+		</div>
+	</div>
+</div>
+	
+</body>
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="module_style.js"></script>
+
+</html>

@@ -1,0 +1,524 @@
+@charset "UTF-8";
+
+body {
+	
+	background: #D7DBDD; /* #CCD1D1; */
+	font-family: 'Fredoka One', cursive;
+}
+
+a {
+
+	text-decoration: none;
+}
+
+img{
+	height: 200px;
+	width: 200px;
+	margin-top: 25px;
+	border: 1px solid black;
+}
+
+/* 
+ * ==== Main bar, where the video and title go === 
+ */
+
+#title-bar{
+	position: relative;
+	z-index: 10;
+	top: 60px;
+}
+
+#main-title{
+	text-align:center;
+	font-size: 64px;
+	color: #F47C7C;
+	margin-top: 135px;
+	-webkit-transition: 0.8s;
+	-moz-transition: 0.8s;
+	-o-transition: 0.8s;
+	transition: 0.8s;
+	position: relative;
+	top: -120px;
+	z-index: 300;
+	left: 0px;
+	margin-bottom: 100px;
+	-webkit-text-stroke-width: 1px;
+   	-webkit-text-stroke-color: black;
+   	-moz-text-stroke-width: 1px;
+   	-moz-text-stroke-color: black;
+   	-o-text-stroke-width: 1px;
+   	-o-text-stroke-color: black;
+	
+}
+
+#symbols-container{
+	position: absolute;
+	top: -45px;
+	margin-left: 390px;
+	margin-right: auto;
+	width: 720px;
+	z-index: 200;
+	-webkit-text-stroke-width: 1px;
+   	-webkit-text-stroke-color: black;
+   	-moz-text-stroke-width: 1px;
+   	-moz-text-stroke-color: black;
+   	-o-text-stroke-width: 1px;
+   	-o-text-stroke-color: black;
+}
+
+.symbol{
+	position: relative;
+	display: inline-block;
+	font-size: 38px;
+	padding: 5px;
+	margin-left: 60px;
+	text-align: center;
+	-webkit-transition: 1s;
+	-moz-transition: c1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+
+.symbol:hover{
+	font-size: 64px;
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	margin-top: -30px;
+	margin-left: 45px;
+}
+
+
+#plus{
+	color: #82E0AA;
+}
+#divide{
+	color: #F8C471;
+}
+#subraction{
+	color: #85C1E9;
+}
+#multiply{
+	color: #F7DC6F;
+	top: 10px;
+}
+
+#divide.symbol:hover{
+	margin-left: 29px;
+}
+#subraction.symbol:hover{
+	margin-left: 43px;
+}
+
+
+/* Display bar that is fixed with screen */
+
+#account-bar{
+	display: inline-block;
+	position: fixed;
+	top: -2px;
+	height: 80px;
+	width: 100%;
+	left: 0%;
+	z-index: 100;
+}
+
+#background-bar{
+	background: white;
+	height: 100px;
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	z-index: 100;
+}
+
+#login{
+	position: absolute;
+	text-align: center;
+	padding: 7px 23px 7px 23px;
+	background:  #F47C7C;
+	color: white;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	cursor: pointer;
+	left: 1035px;
+	top: 23px;
+	z-index: 100;
+}
+
+#register{
+	position: absolute;
+	left: 100px;
+	text-align: center;
+	padding: 7px 15px 7px 15px;
+	background:  #F47C7C;
+	color: white;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	cursor: pointer;
+	left: 1145px;
+	top: 23px;
+	z-index: 100;
+}
+
+#register:hover{
+	-webkit-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+	background: #FF2A2D;
+}
+
+#login:hover{
+	-webkit-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+	background: #FF2A2D;
+}
+
+/* equation bar */
+.content-item {
+	position: relative;
+	display: inline-block;
+	height: 800px;
+	width: 315px;
+	left: 0px;
+	margin-left: -10px;
+	top: 150px;
+	border-color: black;
+	border-width: 5px;
+	border-style: dashed;
+	border-bottom: 0px;
+	border-top: 0px;
+}
+
+#content-section {
+	position: absolute;
+	height: 400px;
+	width: 1290px;
+}
+
+#equations-slider { 
+
+	/*background: -webkit-linear-gradient(-180deg, rgb(130,224,170, 0.0) , rgb(130,224,170, 0.8)); */
+	background: -webkit-linear-gradient(rgba(130, 224, 170, 0.8), rgba(130, 224, 170, 0.2)); 
+	background: -o-linear-gradient(rgba(130, 224, 170, 0.8), rgba(130, 224, 170, 0.2));
+	background: -moz-linear-gradient(rgba(130, 224, 170, 0.8), rgba(130, 224, 170, 0.2));
+	background: linear-gradient(rgba(130, 224, 170, 0.8), rgba(130, 224, 170, 0.2));
+}
+#calculations-slider {
+	
+	background: -webkit-linear-gradient(rgba(248,196,113, 0.8), rgba(248,196,113, 0.2)); 
+	background: -o-linear-gradient(rgba(248,196,113, 0.8), rgba(248,196,113, 0.2));
+	background: -moz-linear-gradient(rgba(248,196,113, 0.8), rgba(248,196,113, 0.2));
+	background: linear-gradient(rgba(248,196,113, 0.8), rgba(248,196,113, 0.2));
+}
+#tutorials-slider {
+
+	background: -webkit-linear-gradient(rgba(133,193,233, 0.8), rgba(133,193,233, 0.2)); 
+	background: -o-linear-gradient(rgba(133,193,233, 0.8), rgba(133,193,233, 0.2));
+	background: -moz-linear-gradient(rgba(133,193,233, 0.8), rgba(133,193,233, 0.2));
+	background: linear-gradient(rgba(133,193,233, 0.8), rgba(133,193,233, 0.2));
+
+}
+#sections-slider { 
+
+	background: -webkit-linear-gradient(rgba(247,220,111, 0.8), rgba(247,220,111, 0.2)); 
+	background: -o-linear-gradient(rgba(247,220,111, 0.8), rgba(247,220,111, 0.2));
+	background: -moz-linear-gradient(rgba(247,220,111, 0.8), rgba(247,220,111, 0.2));
+	background: linear-gradient(rgba(247,220,111, 0.8), rgba(247,220,111, 0.2));
+
+}
+
+.grid-item--small {
+  float: left;
+  width: 250px;
+  height: 100px;
+  left: 30px;
+  top: 40px;
+  position: relative;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+  background: #7F8C8D;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  opacity: 0.8;
+  margin-top: 5px;
+  cursor: pointer;
+
+}
+
+.grid-item--large {
+  float: left;
+  width: 250px;
+  height: 300px;
+  left: 30px;
+  top: 40px;
+  position: relative;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+  background: #7F8C8D;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  opacity: 0.7;
+  margin-top: 5px;
+  cursor: pointer;
+
+}
+
+.grid-item--small:hover, .grid-item--large:hover{
+	opacity: 1;
+}
+
+.large-font{
+	position: relative;
+	top: 5px;
+	font-size: 30px;
+	color: #85C1E9;
+}
+
+.small-font {
+	position: relative;
+	top: 6px;
+	font-size: 15px;
+	color: lightgrey;
+	margin-top: 5px;
+}
+
+.button {
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	color: white;
+	background: #D7DBDD;
+	position: relative;
+	left: 53px;
+	top: -4px;
+	margin-top: 20px;
+	padding: 7px 23px 7px 23px;
+	font-size: 20px;
+	z-index: 100;
+	-webkit-transition: 0.4s;
+  	-moz-transition: 0.4s;
+  	-o-transition: 0.4s;
+ 	transition: 0.4s;
+ 	border-radius: 5px;
+}
+
+.button:hover{
+	-webkit-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+}
+
+/* label bar */
+
+#label-bar {
+	position: absolute;
+	height: 100px;
+	width: 1290px;
+	margin-top: 40px;
+	margin-left: -10px;
+	background: white;
+	opacity: 0.4;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	border-left: 0px;
+	z-index: 80;
+}
+
+.label {
+	margin-top: 10px;
+	position: relative;
+	display: inline-block;
+	margin-left: 15px;
+	font-size: 55px;
+}
+
+#equations{
+	margin-left: 26px; 
+	color: #82E0AA;
+}
+#calculations{
+	margin-left: 16px;
+    color: #F8C471;
+}
+#tutorials{
+	margin-left: 35px;
+	color: #85C1E9;
+}
+#sections{
+	margin-left: 90px;
+	color: #F7DC6F;
+}
+
+
+/* Logo */
+#logo{
+	text-align:center;
+	font-size: 40px;
+	color: #F47C7C;
+	top: 15px;
+	position: relative;
+	z-index: 300;
+	left: 60px;
+	-webkit-transition: 0.8s;
+	-moz-transition: 0.8s;
+	-o-transition: 0.8s;
+	transition: 0.8s;
+	width: 100px;
+	-webkit-text-stroke-width: 0.5px;
+   	-webkit-text-stroke-color: black;
+   	-moz-text-stroke-width: 0.5px;
+   	-moz-text-stroke-color: black;
+   	-o-text-stroke-width: 0.5px;
+   	-o-text-stroke-color: black;
+   	cursor: pointer;
+	
+}
+
+#logo-symbols-container{
+	position: absolute;
+	top: 59px;
+	margin-left: 53px;
+	margin-right: auto;
+	z-index: 200;
+	-webkit-text-stroke-width: 0.5px;
+   	-webkit-text-stroke-color: black;
+   	-moz-text-stroke-width: 0.5px;
+   	-moz-text-stroke-color: black;
+   	-o-text-stroke-width: 0.5px;
+   	-o-text-stroke-color: black;
+}
+
+.logo-symbol{
+	position: relative;
+	display: inline-block;
+	font-size: 22px;
+	padding: 2px;
+	text-align: center;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+
+#multiply.logo-symbol{
+	top: 6px;
+}
+
+.logo-symbol:hover{
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+
+@media(max-width: 1440px) and (min-width: 1290px){
+	#main-title{
+		left: -38px;
+	}
+	#login{
+		left: 1187px;
+	}
+	#register{
+		left: 1307px;
+	}
+	#label-bar{
+		width: 1442px;
+		border-right: 0px;
+	}
+	#content-section{
+		width: 1432px;
+	}
+	.content-item{
+		width: 354px;
+	}
+	.grid-item--small{
+		left: 55px;
+	}
+	.grid-item--large{
+		left: 55px;
+	}
+	#title-bar{
+		left: 6px;
+		margin-left: 70px;
+	}
+	#equations{
+		margin-left: 56px;
+	}
+	#calculations{
+		margin-left: 51px;
+	}
+	#tutorials{
+		margin-left: 67px;
+	}
+	#sections{
+		margin-left: 122px;
+	}
+
+}
+
+
+@media(max-width: 1270px) and (min-width: 1024px) {
+	#main-title{
+		left: 135px;
+	}
+	#login{
+		left: 1155px;
+	}
+	#register{
+		left: 1275px;
+	}
+	#label-bar{
+		width: 1410px;
+		border-right: 0px;
+	}
+	#content-section{
+		width: 1400px;
+	}
+	.content-item{
+		width: 346px;
+	}
+	.grid-item--small{
+		left: 45px;
+	}
+	.grid-item--large{
+		left: 45px;
+	}
+	#title-bar{
+		left: 55px;
+	}
+	#equations{
+		margin-left: 46px;
+	}
+	#calculations{
+		margin-left: 50px;
+	}
+	#tutorials{
+		margin-left: 55px;
+	}
+	#sections{
+		margin-left: 112px;
+	}
+
+}

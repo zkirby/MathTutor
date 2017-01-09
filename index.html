@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MathTutor</title>
+<link href="homepage.css" rel="stylesheet" type="text/css">
+<link href="modal_boxes.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Chewy|Coiny|Fredoka+One|Nunito|Righteous" rel="stylesheet">
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Main Section --> 
+<div class="main-bar">
+
+	<!-- Subheader scroll bar -->
+	<div id="account-bar">
+		<div id="background-bar"></div>
+		<input type="text" id="searchbar" placeholder="Find a Module">
+		<div id="search">search</div>
+		<div id="help">?</div>
+		<div id="login">Login</div>
+		<div id="register">Register</div>
+	</div>
+
+	<!-- Subheader title section -->
+	<div id="title-bar">
+		<div id="main-title">MathTutor</div>
+			<div id="symbols-container">
+				<div class="symbol" id="plus">+</div>
+				<div class="symbol" id="divide">/</div>
+				<div class="symbol" id="subraction">-</div>
+				<div class="symbol" id="multiply">*</div>
+			</div>
+		<!--<div id="slogan"><em>If tutors tutor, who tutors tutors? Use the search bar or look below for modules and tools to help you be the best tutor you can be</em></div> -->
+	</div>
+
+	<!-- Modal Login Box -->
+	<div id="modal-container">
+		<div id="modal-overlay"></div>
+			<div id="modal-box">
+				<div id="modal-header">Login</div>
+				<div id="modal-content">
+					<input type = "text" class = "cred" placeholder = "Enter Username" />
+					<input type = "password" class = "cred" placeholder = "Enter Password" />
+				</div>
+				<div id="modal-footer">
+					<div id="submit">Submit</div>
+					<div id="cancel">Cancel</div>
+				</div>
+			</div>
+	</div>
+
+	<!-- Modal Contact Box -->
+	<div class="modal-container-contact" id="modal-contact">
+		<div id="modal-overlay-contact"></div>
+			<div id="modal-box">
+				<div id="modal-header">About</div>
+				<div id="modal-content-contact">
+				Hey there! My name is Zachary, I'm the developer and maintainer of this here proof of concept website. Nothing is functional as of right now and only the Calc AB module page actually exists, all that has been done is the very basics of the front end but hopefully I'll be able to hash out a little bit more in the coming weeks.
+
+				Essentially this website theoretically is going to exist as a hub of tutoring. It's going to have tutorials, step by step derivative calculators and anything and everything a tutor could need to aide them in a tutoring session. This idea is based around the popular and helpful www.pythontutor.com.
+				</div>
+				<div id="modal-footer-content">
+					<div id="submit-contact">Ok</div>
+				</div>
+				</div>
+			</div>
+	</div>
+
+	<!-- Modal Help Box -->
+	<div class="modal-container-contact" id="modal-help">
+		<div id="modal-overlay-contact"></div>
+			<div id="modal-box">
+				<div id="modal-header">Help</div>
+				<div id="modal-content-contact">
+				Hi! Welcome to MathTutor. MathTutor is a community based math resource that is meant to be used during tutoring sessions. The website is broken down into 'modules' which each cover a specific subject in math. Each one is chalk full of tutoring resources to make each tutoring session the most effective it can be. To get started search for a module or scroll down to see trending ones.
+				</div>
+				<div id="modal-footer-content">
+					<div id="submit-contact">Ok</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Video subheader -->
+	<div class="video-fullcontainer">
+		<div class="video-container">
+			<div class="filter"></div>
+			<video autoplay loop class="fillWidth">
+		        <source src="resources/MP4/Analog-Typing.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		        <source src="resources/WEBM/Analog-Typing.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		    </video>
+		</div>
+	</div>
+</div>
+
+<div id="bottom-arrow">></div>
+<div id="bottom-border"></div>
+
+<div id="bottom-bar">
+	<div id="module-text">Modules</div>
+	<div class="grid">
+		<a class="grid-item" id="row_one1" name="Calculus" href="module.html">
+			<div class="header-text" id="Calc">Calculus AB</div>
+			<div class="subtext">Grade-Level: Highschool Souphmore-Senior</div>
+			<div class="subtext">Author: Jane Doe</div>
+		</a>
+		<a class="grid-item" id="row_one3" name="Calculus" href="module.html">
+			<div class="header-text" id="Calc">Calculus D</div>
+			<div class="subtext">Grade-Level: Highschool Senior/ College Freshman</div>
+			<div class="subtext">Author: Adam Smith</div>
+		</a>
+		<a class="grid-item" id="row_one4" name="Algebra"href="module.html">
+			<div class="header-text" id="Alg">Algebra I</div>
+			<div class="subtext">Grade-Level: Any</div>
+			<div class="subtext">Author: John Smith</div>
+		</a>
+		<a class="grid-item" id="row_two1" name="Algebra" href="module.html">
+			<div class="header-text" id="Alg">Algebra II</div>
+			<div class="subtext">Grade-Level: Highschool/ 8th grade</div>
+			<div class="subtext">Author: Jane Smith</div>
+		</a>
+		<a class="grid-item" id="row_one2" name="Calculus" href="module.html">
+			<div class="header-text" id="Calc">Calculus BC</div>
+			<div class="subtext">Grade-Level: Highschool Junior-Senior</div>
+			<div class="subtext">Author: John Doe</div>
+		</a>
+		<a class="grid-item" id="row_two2" name="Algebra" href="module.html">
+			<div class="header-text" id="Alg">Pre-Algebra</div>
+			<div class="subtext">Grade-Level: Any</div>
+			<div class="subtext">Author: Joesph Smith</div>
+		</a>
+		<a class="grid-item" id="row_two3" name="Algebra"href="module.html">
+			<div class="header-text" id="Alg">Linear Algebra</div>
+			<div class="subtext">Grade-Level: College</div>
+			<div class="subtext">Author: J.P. Smith</div>
+		</a>
+		<a class="grid-item" id="row_two4" name="Calculus"href="module.html">
+			<div class="header-text" id="Calc">Multivar Calculus</div>
+			<div class="subtext-adjusted">Grade-Level: College</div>
+			<div class="subtext-adjusted">Author: Jane Doe</div>
+		</a>
+		<a class="grid-item" id="row_three1" name="Other"href="module.html">
+			<div class="header-text" id="Oth">Geometry</div>
+			<div class="subtext">Grade-Level: Highschool/ 7-8th grade</div>
+			<div class="subtext">Author: John Doe</div>
+		</a>
+		<a class="grid-item" id="row_three2" name="Calculus"href="module.html">
+			<div class="header-text" id="Calc">Pre-Calculus</div>
+			<div class="subtext">Grade-Level: Highschool</div>
+			<div class="subtext">Author: John Smith</div>
+		</a>
+		<a class="grid-item" id="row_three3" name="Other"href="module.html">
+			<div class="header-text" id="Oth">Math Fundamentals</div>
+			<div class="subtext-adjusted">Grade-Level: Elementary School/ Middle School</div>
+			<div class="subtext-adjusted">Author: Jane Smith</div>
+		</a>
+		<a class="grid-item" id="row_three4" name="Algebra" href="college.html">
+			<div class="header-text" id="CS">CS61a</div>
+			<div class="subtext-adjusted">Grade-Level: College</div>
+			<div class="subtext-adjusted">Author: Don Jenero</div>
+		</a>
+	</div>
+</div>
+<div id="contact-bar">
+	<div class="contact-text">About</div>
+	<div class="contact-text">Find a tutor</div>
+	<div class="contact-text">What's next?</div>
+	<div class="contact-text">Who we are</div>
+	<div class="contact-text">Contact</div>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="homepage_style.js"></script>
+
+</html>
