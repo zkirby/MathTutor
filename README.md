@@ -1,2 +1,5 @@
 # mathtutor
-Module based online Math Tutor platform
+I constructed this website under the same premise as EduBox: provide easy and effective education. The MathTutor website itself, however, has some distinct features that are not present in many other tutoring websites. First, the MathTutor website is not ment to tutor, its ment *for* tutors. The tools on the website are meant to be used during live tutoring sessions and to train tutors who may have great knowledge of the content but lack the formal training to teach it. Second, the website is broken down into modules, much like the American education system, with each module upgraded and maintained by the community. Finally, the math tutor website is not just for high/middle school tutors, its for any and every grade level, including college. Meaning that students taking advance upper div courses will finally have a community to turn to should they need help.
+
+# Current State
+right now the website is simply a front-end only proof of concept. I plan to upgrade this website in the future and bring it under the EduBox family umbrella in the future.
